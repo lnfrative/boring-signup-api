@@ -10,4 +10,6 @@ use Laravel\Lumen\Auth\Authorizable;
 class User extends Model
 {
     use Authenticatable, Authorizable, HasFactory;
+
+    protected $table = 'users';
 }

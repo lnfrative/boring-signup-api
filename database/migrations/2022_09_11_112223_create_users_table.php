@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $this->string('name');
-            $this->string('favorite_color');
-            $this->string('email')->unique();
-            $this->date('birthday');
+            $table->string('name');
+            $table->string('favorite_color');
+            $table->string('email')->unique();
+            $table->date('birthday');
 
             $table->timestamps();
         });
