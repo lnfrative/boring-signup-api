@@ -24,6 +24,8 @@ class UserFactory extends Factory
         return [
             'name' => $this->faker->name,
             'email' => $this->faker->unique()->safeEmail,
+            'birthday' => $this->faker->date(),
+            'favorite_color' => $this->faker->colorName(),
         ];
     }
 }
